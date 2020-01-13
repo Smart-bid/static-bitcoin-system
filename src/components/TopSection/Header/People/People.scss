@@ -1,0 +1,27 @@
+.People {
+    display: flex;
+    align-items: center;
+    padding: 5px 70px;
+    background-color: $orange;
+    .person-img {
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 8px;
+        img {
+            min-width: 50px;
+        }
+    }
+    .person-info {
+        font-family: $varella;
+        text-align: center;
+        .person-name {
+            font-size: 13px;
+        }
+        .earnings {
+            strong {
+                font-size: 32px;
+                color: #333;
+            }
+        }
+    }
+}

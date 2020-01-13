@@ -1,0 +1,32 @@
+@import './People/People.scss';
+
+.Header {
+    background-color: #f0f0f0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        .counter {
+            .wrap {
+                padding: 18px 50px;
+                background-color: $orange;
+                span {
+                    display: flex;
+                    align-items: center;
+                    font-family: Impact, sans-serif;
+                    font-size: 20px;
+                    color: #333;
+                    text-transform: uppercase;
+                    strong {
+                        font-size: 35px;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+        .logo {
+            img {
+                max-width: 190px;
+            }
+        }
+    }
+}

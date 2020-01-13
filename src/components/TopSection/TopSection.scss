@@ -1,0 +1,49 @@
+@import './Header/Header.scss';
+@import './Regform/Regform.scss';
+@import './JoinBtcSystem/JoinBtcSystem.scss';
+
+.TopSection {
+    .main-banner {
+        position: relative;
+        padding-top: 75px;
+        padding-bottom: 100px;
+        .container {
+            .title {
+                h1 {
+                    font-size: 38px;
+                    font-weight: bold;
+                    line-height: 1.15;
+                    color: #fff;
+                    text-align: center;
+                    .orange {
+                        color: $orange;
+                    }
+                }
+            }
+            .wrapper-flex {
+                display: flex;
+                .VideoPlayer {
+                    width: 69%;
+                    max-width: 640px;
+                    margin-right: 10px;
+                }
+                .Regform {
+                    width: 31%;
+                }
+            }
+        }
+        > video {
+            background-size: cover;
+            background-position: 50% 50%;
+            position: absolute;
+            right: -100%;
+            bottom: -38%;
+            top: -100%;
+            left: -100%;
+            margin: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+        }
+    }
+}
