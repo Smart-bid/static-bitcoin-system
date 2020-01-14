@@ -57,7 +57,7 @@ workflows:
       - build:
           filters:
             branches:
-              only: ci
+              only: master
       - cypress/run:
           executor: cypress/base-8
           start: npm start
