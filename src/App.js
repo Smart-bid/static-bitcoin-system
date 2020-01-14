@@ -15,7 +15,7 @@ export default class App extends ReactQueryParams {
             <div className='App'>
                 <TopSection {...this.props} />
 
-                {/*<MidSection languageManager={this.props.languageManager}/>*/}
+                <MidSection languageManager={this.props.languageManager}/>
 
                 {/*<BottomSection*/}
                 {/*    languageManager={this.props.languageManager}*/}

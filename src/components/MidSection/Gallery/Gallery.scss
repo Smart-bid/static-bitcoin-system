@@ -1,0 +1,21 @@
+.Gallery {
+    .heading {
+        background-color: $orange;
+        text-align: center;
+        h4 {
+            font-size: 35px;
+            color: #000;
+            margin: 0;
+            line-height: 1.7;
+        }
+    }
+    .image-list {
+        display: flex;
+        .item {
+            width: 33.33%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

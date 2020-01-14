@@ -57,23 +57,6 @@ export default class TopSection extends Component {
 
                 <JoinBtcSystem {...this.props}/>
 
-
-
-                {/*<div className="top-reg" id="top">*/}
-                {/*    <div className="container">*/}
-                {/*        <div className="row">*/}
-                {/*            <div className="video embed-responsive col-lg-8 col-md-7 col-sm-12">*/}
-                {/*                <VideoPlayer link={this.state.videos[languageManager.video]}  {...this.props}  />*/}
-                {/*            </div>*/}
-                {/*            <div className="col-lg-4 col-md-5 col-sm-12">*/}
-                {/*                <div className="form-container">*/}
-                {/*                    <div className="formHeader"><h1>{languageManager.topreg1}</h1></div>*/}
-                {/*                    */}
-                {/*                </div>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
             </div>
         )
     }

@@ -32,7 +32,7 @@ export default class VideoPlayer extends Component {
     render() {
         return (
             <div className="VideoPlayer">
-                <div className="gtd-video-title current-time">
+                <div className="current-time">
                     <span>{this.state.time}</span>
                 </div>
                 <ReactPlayer url={this.props.link} playing={this.state.play} controls={true} muted width='100%' height='100%' onClick={this.props.trackVideoPlay}/>
