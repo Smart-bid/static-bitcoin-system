@@ -15,8 +15,21 @@ export default class JoinBtcSystem extends Component {
     }
 
     Listener(e) {
-        let mouseX = e.clientX * 0.03;
-        let mouseY = e.clientY * 0.03;
+        let mouseX = e.clientX * 0.04,
+            mouseY = e.clientY * 0.04;
+        //Coordinates X
+        if(mouseX <= window.innerWidth / 2 * 0.04) {
+            mouseX = mouseX - window.innerWidth / 2 * 0.04
+        } else if(mouseX >= window.innerWidth / 2 * 0.04) {
+            mouseX = mouseX - window.innerWidth / 2 * 0.04
+        }
+        //Coordinates Y
+        if(mouseY <= window.innerHeight / 2 * 0.04) {
+            mouseY = mouseY - window.innerHeight / 2 * 0.04
+        } else if(mouseY >= window.innerHeight / 2 * 0.04) {
+            mouseY = mouseY - window.innerHeight / 2 * 0.04
+        }
+
         this.count(mouseX, mouseY)
     }
     count(mouseX, mouseY) {

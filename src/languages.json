@@ -44,15 +44,18 @@
       "$13,000 In Exactly 24 Hours"
     ],
 
-
+    "regform_title": [
+      "Let Me Show You How to Make",
+      "Cash LIVE - Right Now"
+    ],
     "topreg1": "CHANGE YOUR LIFE TODAY!",
     "topreg2": "LIFE TODAY!",
-    "fname": "First Name",
-    "lname": "Last Name",
-    "email": "Email",
+    "first_name": "Your first Name",
+    "last_name": "Your last Name",
+    "email": "Your email address",
     "pass": "Password",
     "pass2": "Confirm Password",
-    "button": "NEXT >",
+    "button": "Next Step",
     "button_last": "REGISTER NOW",
     "passtest": [
       "The password must be 8 characters long.",
@@ -159,62 +162,18 @@
       }
     ],
 
-    "qna_title": "FREQUENTLY ASKED QUESTIONS",
-    "qna_question": [
-      {
-        "q": "What kind of results can I expect?",
-        "a": "Bitcoin Revolution members typically profit a minimum of $1100 daily."
-      },
-      {
-        "q": "How many hours per day do I need to work?",
-        "a": "Our members work an average of 20 minutes a day or less. Because the software handles the trading the amount of 'work' required is minimal."
-      },
-      {
-        "q": "What is the maximum amount that I can make?",
-        "a": "Your profits are unlimited within The Bitcoin Revolution. Some members earned their first million within just 61 days."
-      },
-      {
-        "q": "Do you accept applications from all countries?",
-        "a": "Yes. Bitcoin and other cryptos do not recognize international boundaries. You can send and receive from any country. And with that being our inspiration, we accept members from all parts of the globe."
-      },
-      {
-        "q": "How much does the software cost?",
-        "a": "Members of The Bitcoin Revolution get a copy of our proprietart software free of charge. To become a member, simply fill out the form on this page."
-      },
-      {
-        "q": "Is this like MLM or Affiliate Marketing?",
-        "a": "This is not like MLM, affiliate marketing or anything else out there. The software wins trades with 99.4% accuaracy."
-      }
+    "about_title": "Meet Steve McKay",
+    "about_description": [
+      "The Genius Behind The Bitcoin System.",
+      "Hi - I’m an ex-software developer for a large firm whose name I prefer not to disclose.",
+      "I created a Bitcoin Trading Software that has earned over $18,484,931.77 in profits within the past 6 months alone.\nThis software is making millionaires faster than early investors of Uber, Facebook or Airbnb.",
+      "If you want to make a million with Bitcoin, watch the video above to learn how.",
+      "Your Friend",
+      "Steve McKay"
     ],
-    "last_btn": "GET STARTED NOW",
-    "risk": [
-      "WARNING:",
-      "Due to extremely high media demand, we will close registration as of",
-      " - HURRY!"
-    ],
-    "exclusive": [
-      "Exclusive offers for",
-      "trades in ",
-      "UNITED KINGDOM"
-    ],
-    "flag": "gbflag",
-    "video": "en_1",
 
-    "error_invalid_email":  "Fout: Ongeldig e-mailadres",
-    "error_empty_email": "Fout: Leeg e-mailadres",
-    "error_empty_last_name": "Fout: Lege achternaam",
-    "error_last_name_digits": "Fout: Achternaam kan geen cijfers bevatten",
-    "error_empty_first_name": "Fout: Lege voornaam",
-    "error_first_name_digits": "Fout: Voornaam kan geen cijfers bevatten",
-    "error_empty_password": "Fout: Leeg wachtwoord",
-    "error_pass_length": "Fout: Het wachtwoord moet tussen de 6 en 8 karakters lang zijn",
-    "error_pass_special_chars": "Fout: Het wachtwoord mag geen speciale karakters bevatten",
-    "error_pass_small_letter": "Fout: Het wachtwoord moet minstens een kleine letter bevatten",
-    "error_pass_cap_letter": "Fout: Het wachtwoord moet minstens een hoofdletter bevatten",
-    "error_pass_one_num":"Fout: Het wachtwoord moet minstens een cijfer bevatten",
-    "error_accept_conditions": "Fout: Accepteer de algemene voorwaarden",
-    "error_real_phone": "Het systeem kon u niet registreren. Verstrek uw werkelijke telefoonnummer.",
-    "error_real_name": "Het systeem kon u niet registreren. Verstrek uw werkelijke e-mailadres.",
-    "error_country": "Het systeem kon u niet registreren. Dit aanbod is niet beschikbaar in uw land."
+    "copyright": "Bitcoin System ",
+    "copyright_info": "Important Risk Warning: CFD trading can bring many benefits but also includes the risk of losing some or all of the money investors should consider. We strongly recommend that you read our terms and conditions and our disclaimer before investing. Customers should also consider their country's capital gains tax. It is against the law to persuade US persons to buy and sell commodity options, even if presented as \"prediction contracts\", unless they are listed on a CFTC-listed exchange for trading or are otherwise exempt from the law."
+
   }
 }

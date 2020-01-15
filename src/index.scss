@@ -1,11 +1,13 @@
 //Global Variables
 $montserrat: 'Montserrat', sans-serif;
 $varella: 'Varela Round', sans-serif;
+$changa: 'Changa One', cursive;
 $orange: #fbaf41;
 
 //Import Fonts
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Changa+One&display=swap');
 
 //Import Components
 @import './components/TopSection/TopSection.scss';
@@ -14,29 +16,34 @@ $orange: #fbaf41;
 @import './pages/Page.scss';
 
 
-
 body {
-  font-family: $varella;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: $varella;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  text-decoration: underline;
+    text-decoration: underline;
 
-  &:hover {
-    text-decoration: none;
-  }
+    &:hover {
+        text-decoration: none;
+    }
 }
+
 p {
-  margin: 0;
+    margin: 0;
 }
+
 .container {
-  max-width: 960px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &.xxl {
+        max-width: 1100px;
+    }
 }
 

@@ -9,10 +9,6 @@ import JoinBtcSystem from './JoinBtcSystem/JoinBtcSystem'
 import bgVideo from './media/BG-transcode.mp4'
 import mainVideo from './media/main.mp4'
 
-//Images
-import bitcoinLogo from './media/Bitcoin.svg'
-
-
 export default class TopSection extends Component {
     constructor(props) {
         super(props)
