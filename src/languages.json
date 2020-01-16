@@ -64,6 +64,12 @@
       "Only alphanumeric characters are allowed."
     ],
     "morebox": "Voorbeeld: 12John34",
+    "modal_regform_title": [
+      "STOP! You've just made a BIG mistake ...",
+      "This is your LAST POSSIBILITY to use The Bitcoin System and to have economic security for the future."
+    ],
+    "close_modal_regform": "Close, I don't want to make money",
+
     "join_title": "Join The Bitcoin System",
     "join_description": [
       {

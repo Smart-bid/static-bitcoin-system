@@ -5,20 +5,33 @@
     .wrapper {
         display: flex;
         justify-content: space-between;
+        @include breakpoint(768) {
+            justify-content: center;
+        }
         .counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            background-color: $orange;
+            @include breakpoint(768) {
+                display: none;
+            }
             .wrap {
-                padding: 18px 50px;
-                background-color: $orange;
+                max-width: 320px;
+                padding: 5px 10px;
                 span {
                     display: flex;
                     align-items: center;
                     font-family: Impact, sans-serif;
                     font-size: 20px;
+                    line-height: 1;
                     color: #333;
                     text-transform: uppercase;
                     strong {
                         font-size: 35px;
                         font-weight: normal;
+                        margin-right: 10px;
                     }
                 }
             }

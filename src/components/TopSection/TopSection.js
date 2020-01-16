@@ -12,16 +12,17 @@ import mainVideo from './media/main.mp4'
 export default class TopSection extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            showModal: false
+        }
     }
-    handleScroll() {
 
-        let panel = this.regPanel.current;
+    componentDidMount() {
+        setTimeout(()=> this.setState({showModal: true}),2000)
+    }
 
-        window.scrollTo({
-            top: panel.offsetTop,
-            left: 0,
-            behavior: 'smooth'
-        })
+    handleClose() {
+        this.setState({showModal: false})
     }
 
     render() {
@@ -29,7 +30,7 @@ export default class TopSection extends Component {
         return (
             <div className='TopSection'>
 
-                <Header languageManager={this.props.languageManager} handleScroll={this.handleScroll.bind(this)}/>
+                <Header languageManager={this.props.languageManager}/>
 
                 <section className="main-banner">
                     <div className="container">
@@ -52,6 +53,25 @@ export default class TopSection extends Component {
                 </section>
 
                 <JoinBtcSystem {...this.props}/>
+
+                <section className={(this.state.showModal) ? 'modal-window active' : 'modal-window'}>
+                    <div className="wrapper">
+                        <div className={(this.props.syncState.errors.responseError) ? 'heading hidden' : 'heading'}>
+                            <div className="red-label">
+                                <h3>
+                                    {languageManager.modal_regform_title[0]}
+                                </h3>
+                            </div>
+                            <h5>
+                                {languageManager.modal_regform_title[1]}
+                            </h5>
+                        </div>
+                        <Regform {...this.props} />
+                        <div className="close-modal-window">
+                            <span onClick={this.handleClose.bind(this)}>{languageManager.close_modal_regform}</span>
+                        </div>
+                    </div>
+                </section>
 
             </div>
         )

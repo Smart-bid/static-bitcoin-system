@@ -1,3 +1,6 @@
+//Import Mixins
+@import "mixin";
+
 //Global Variables
 $montserrat: 'Montserrat', sans-serif;
 $varella: 'Varela Round', sans-serif;
@@ -14,7 +17,6 @@ $orange: #fbaf41;
 @import './components/MidSection/MidSection.scss';
 @import './components/BottomSection/BottomSection.scss';
 @import './pages/Page.scss';
-
 
 body {
     font-family: $varella;

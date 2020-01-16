@@ -1,8 +1,17 @@
 .People {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 5px 70px;
+    width: 20%;
+    max-width: 320px;
+    padding: 5px 10px;
     background-color: $orange;
+    @include breakpoint(960) {
+        width: 26%;
+    }
+    @include breakpoint(768) {
+        display: none;
+    }
     .person-img {
         border-radius: 50%;
         overflow: hidden;

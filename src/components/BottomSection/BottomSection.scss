@@ -1,18 +1,44 @@
 .BottomSection {
     .about {
         padding: 20px 0;
+        @include breakpoint(768) {
+            padding: 20px;
+        }
+        @include breakpoint(479) {
+            padding-left: 0;
+            padding-right: 0;
+        }
         .container {
             .wrapper-flex {
                 display: flex;
                 align-items: center;
+                @include breakpoint(768) {
+                    flex-wrap: wrap;
+                }
                 .img {
                     margin-right: 30px;
+                    @include breakpoint(768) {
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }
                     img {
                         max-width: 565px;
                         border-radius: 6px;
+                        @include breakpoint(960) {
+                            max-width: 100%;
+                            min-width: 400px;
+                        }
+                        @include breakpoint(768) {
+                            max-width: 100%;
+                            min-width: initial;
+                        }
                     }
                 }
                 .description {
+                    min-width: 320px;
+                    @include breakpoint(768) {
+                        min-width: initial;
+                    }
                     h3 {
                         font-size: 30px;
                         color: $orange;
@@ -43,6 +69,9 @@
                     .heading {
                         display: none;
                     }
+                }
+                .selected-flag {
+                    width: 20% !important;
                 }
             }
         }

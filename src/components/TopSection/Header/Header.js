@@ -26,7 +26,7 @@ export default class Header extends Component {
                     <div className="counter">
                         <div className="wrap">
                             <span>
-                                <strong>{this.state.randomNum}</strong>&nbsp;
+                                <strong>{this.state.randomNum}</strong>
                                 {languageManager.copies}
                             </span>
                         </div>

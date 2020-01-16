@@ -2,6 +2,10 @@
     position: relative;
     padding-top: 80px;
     padding-bottom: 100px;
+    @include breakpoint(768) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
     .container {
         .bitcoin-coin {
             position: absolute;
@@ -9,9 +13,11 @@
             right: 0;
             left: 0;
             text-align: center;
-
             will-change: transform;
             transform-style: preserve-3d;
+            @include breakpoint(479) {
+                display: none;
+            }
             img {
                 max-width: 150px;
             }
@@ -20,6 +26,12 @@
             font-size: 38px;
             font-weight: bold;
             text-align: center;
+            @include breakpoint(768) {
+                font-size: 27px;
+            }
+            @include breakpoint(479) {
+                font-size: 20px;
+            }
         }
         .wrapper-flex {
             display: flex;
@@ -33,6 +45,22 @@
                 border-radius: 6px;
                 box-shadow: 0 10px 20px -11px rgba(65, 164, 213, 0.55);
                 transition: all 350ms ease;
+                @include breakpoint(768) {
+                    width: 100%;
+                    margin-left: 3%;
+                    margin-right: 3%;
+                    margin-bottom: 20px;
+                }
+                &:first-child {
+                    img {
+                        @include transform(rotate(235deg));
+                    }
+                }
+                &:nth-child(2) {
+                    img {
+                        @include transform(rotate(-235deg));
+                    }
+                }
                 &:hover {
                     transform: scale(1.04);
                     box-shadow: 0 10px 20px -9px rgba(35, 108, 145, 0.79);
@@ -47,6 +75,7 @@
                     font-size: 20px;
                     font-weight: 500;
                     line-height: 1.45;
+                    margin-top: 10px;
                     text-align: center;
                     .blue {
                         color: #0c5275;

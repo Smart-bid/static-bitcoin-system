@@ -26,6 +26,9 @@
             .form-group {
                 position: relative;
                 margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
                 input {
                     &.form-control {
                         width: 100%;
@@ -53,6 +56,7 @@
                 border-radius: 5px;
                 border: 1px solid #9b6517;
                 transition: .33s all ease;
+                outline: none;
                 &:hover {
                     background-image: linear-gradient(180deg, #a06715, #fbaf41);
                     span {
@@ -111,6 +115,24 @@
     }
 }
 
+.response-error {
+    text-align: center;
+    .registerBtn {
+        font-size: 18px;
+        padding: 5px 20px;
+        margin-top: 10px;
+        color: #fff;
+        background-color: $orange;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        outline: none;
+        &:hover {
+            background-color: #fd7705;
+        }
+    }
+}
+
 .error {
     opacity: 0;
     width: 100%;
@@ -135,7 +157,7 @@
 
 .loading {
     width: 100%;
-    margin: 4.8vw auto;
+    max-width: 190px;
     animation-name: pulse;
     animation-duration: 3s;
     animation-iteration-count: infinite;

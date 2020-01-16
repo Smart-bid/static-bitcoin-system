@@ -7,7 +7,6 @@ import logo from '../Header/logo.svg'
 export default class Regform extends Component {
     constructor(props) {
         super(props);
-        this.state = { };
         this.inputs = ['first_name', 'last_name', 'email']
     }
 
@@ -35,7 +34,8 @@ export default class Regform extends Component {
         let validate = this.props.validateParams(this.props.syncState.form)
         if (validate.success)
             this.props.setLeadData(this.props.syncState.form)
-                .then(this.setState({loading: true}))
+                // .then(this.setState({loading: true}))
+                .then(this.props.handleStep(this.props.syncState.step + 1))
                 .then(this.props.handleSubmit)
                 .then(res => (res.redirectUrl) ? window.location = res.redirectUrl : this.props.syncErrors({responseError: res.error}))
         else this.setState({errors: validate.errors})
@@ -45,7 +45,7 @@ export default class Regform extends Component {
     render() {
         let languageManager = this.props.languageManager();
 
-        if (!this.state.loading) {
+        if (this.props.syncState.step <=2) {
             return (
                 <div className="Regform">
                     <div className='inner'>
@@ -129,7 +129,7 @@ export default class Regform extends Component {
                     {(this.props.syncState.errors.responseError) ?
                         <div className="response-error">
                             <p>{this.props.syncState.errors.responseError}</p>
-                            <button className="registerBtn" onClick={() => this.props.handleStep(1) && this.setState({loading: false})}>Ok</button>
+                            <button className="registerBtn" onClick={() => this.props.handleStep(1)}>Ok</button>
                         </div>
                     : <img src={logo} alt="lodaing" className="loading"/>}
                 </div>
