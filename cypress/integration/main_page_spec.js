@@ -1,5 +1,22 @@
 describe('My First Test', function() {
-  it('Visits the Kitchen Sink', function() {
+  it('Visits the Mainpage', function() {
     cy.visit('http://localhost:3000/?validation=3&acc=97')
+    cy.get('.first_name').first({timeout: 20000})
+      .type('firstname')
+      .should('have.value', 'firstname')
+    cy.get('.close-modal-window').click()
+    cy.get('.last_name').first()
+      .type('Lastname')
+      .should('have.value', 'Lastname')
+    cy.get('.email').first()
+      .type('fake@email.com')
+      .should('have.value', 'fake@email.com')
+    cy.contains('Next Step').click()
+    cy.get('.tel').first()
+      .type('0633223456')
+      .should('have.value', '0633223456')
+    cy.contains('Next Step').click()
+    cy.url().should('include', '/?validation=3&acc=97', {timeout: 20000})
+    cy.contains('System could not register you. This offer is not available for your country.')
   })
 })
